@@ -1,6 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+
 <body>
-<p>Hello World, my </p>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index3.html">mmtuts</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="myNavbar">
+
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span>&nbsp;Sample</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">List 1</a></li>
+								<li><a href="#">List 2</a></li>
+								<li><a href="#">List 3</a></li>
+							</ul>
+					</li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<input class="form-control" type="text" name="search" placeholder="search">
+					</div>
+					<button class="btn btn-default" type="submit">Search</button>
+				</form>
+
+				<ul class="nav navbar navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-camera"></span>&nbsp;Camera</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="main-container">
+
+		<article class="index-intro">
+			<div class="container">
+				<div class="jumbotron">
+					<div class="row">
+						<h1>This is a intro header of my site</h1>
+						<div class="col-sm-6"><p>The leafes are fresh after the rain the air is cool and clear the sun is shining once again the lion live in the den</p></div>
+						<div class="col-sm-6"></div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</article>
+
+		<article class="index-gallery">
+			<div class="container-fluid">
+				<h2>Hello World</h2>
+				<p>This is some of the website content.</p>
+
+				<div class="row">
+					<div class="col-sm-2 left">This is the left side<img class="img-responsive img-thumbnail" src="image/Z123.jpg">
+					<p>this is a title</p>
+					</div>
+					<div class="col-sm-2 center"><img class="img-rounded img-thumbnail" src="image/Z123.jpg">
+					</div>
+					<div class="col-sm-2 right">This is the right side<img class="img-responsive img-circle" src="image/Z123.jpg">
+					</div>
+					<div class="col-sm-2 left">This is the left side<img class="img-responsive img-thumbnail" src="image/Z123.jpg">
+					<p>this is a title</p>
+					</div>
+					<div class="col-sm-2 center"><img class="img-rounded img-thumbnail" src="image/Z123.jpg">
+					</div>
+					<div class="col-sm-2 right">This is the right side<img class="img-responsive img-circle" src="image/Z123.jpg">
+					</div>
+				</div>
+			</div>
+			</article>
+			<!--Table introduction from here-->
+			<article class="index-table">
+				<div class="container">
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover">
+							<tr class="warning">
+								<th>FirstName:</th>
+								<th>LastName:</th>
+								<th>Age:</th>
+								<th>EyeColor:</th>
+							</tr>
+							
+							<tr class="success">
+								<td>Daniel</td>
+								<td>Nielsen</td>
+								<td>26</td>
+								<td>Blue</td>
+							</tr>
+
+							<tr>
+								<td class="danger">Jane</td>
+								<td class="info">Doe</td>
+								<td class="warning">35</td>
+								<td class="active">Brown</td>
+							</tr>
+						</table>
+					</div>	
+				</div> 
+			</article>
+			<!--Table ends here-->
+
+			<!--Form introduction from here-->
+			<article class="index-form">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4"></div>
+						<div class="col-sm-4">
+							<form>
+								<div class="form-group">
+									<label for="name">Full name:</label>
+									<input class="form-control" type="text" name="name">
+								</div>
+
+								<div class="form-group">
+									<label for="email">E-mail:</label>
+									<input class="form-control" type="text" name="email">
+								</div>
+
+								<div class="form-group">
+									<label for="age">Age:</label>
+									<select class="form-control">
+										<option>10+</option>
+										<option>20+</option>
+										<option>30+</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="message">Message:</label>
+									<textarea class="form-control"></textarea>
+								</div>
+
+								<button class="btn btn-default">default</button>
+								<button class="btn btn-primary">primary</button>
+								<button class="btn btn-success">success</button>
+								<button class="btn btn-info">info</button>
+								<button class="btn btn-warning">warning</button>
+								<button class="btn btn-danger">danger</button>
+								<button class="btn btn-link">link</button>
+								<br>
+								<button class="btn btn-primary btn-lg">primary large</button>
+								<br>
+								<button class="btn btn-primary btn-md">primary medium</button>
+								<br>
+								<button class="btn btn-primary btn-sm">primary small(best)</button>
+								<br>
+								<button class="btn btn-primary btn-xs">primary extra-small</button>
+								<br>
+								<button class="btn btn-primary btn-sm btn-block">primary btn-block</button>
+								<br>
+								<button class="btn btn-primary btn-sm btn-block active">active(styling only)</button>
+								<br>
+								<button class="btn btn-primary btn-sm btn-block disabled">disabled(styling only)</button>
+							</form>
+						</div>
+						<div class="col-sm-4"></div>
+					</div>		
+				</div> 
+			</article>
+			<!--Form ends here-->
+	</section>
 </body>
 </html>
