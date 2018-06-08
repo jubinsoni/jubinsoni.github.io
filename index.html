@@ -15,23 +15,33 @@
       line-height: 1.8;
       color: #f5f6f7;
   }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
+  p {
+    font-size: 16px;
+  }
+  a {
+    color: #ffffff;
+  }
+  .margin {
+    margin-bottom: 45px;
+  }
   .bg-1 { 
-      background-color: #1abc9c; /* Green */
-      color: #ffffff;
+      background-color: #ff9800; /* Yellow */
+      color: #000000;
+      height: 1080px; 
   }
   .bg-2 { 
       background-color: #474e5d; /* Dark Blue */
       color: #ffffff;
+      height: 1080px;
   }
   .bg-3 { 
-      background-color: #ffffff; /* White */
-      color: #555555;
+      background-color: #1E88E5; /* Light Blue */
+      color: #ffffff;
   }
   .bg-4 { 
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
+      background-color: #673ab7; /* Violet */
+      color: #ffffff;
+      height: 1080px;
   }
   .container-fluid {
       padding-top: 70px;
@@ -47,14 +57,14 @@
       letter-spacing: 5px;
   }
   .navbar-nav  li a:hover {
-      color: #1abc9c !important;
+      color: #ffffff !important;
   }
   </style>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -62,58 +72,229 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Me</a>
+      <a class="navbar-brand" href="#Myself">ABOUT ME</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a href="#section1">ACADEMICS</a></li>
+        <li><a href="#section2">PROJECTS</a></li>
+        <li><a href="#section3">ACCOMPLISHMENTS</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
+<div id="Myself" class="container-fluid bg-1 text-center">
+  <div class="jumbotron bg-1">
+    <div class="row">
+      <h1>Hi!! This is jubin soni</h1>
+      <p>I love programming and have a keen interest in the field of Machine learning. I like developing responsive web applications as well as Android applications and on the side I take a whole lot of online tutorials to feed my curosity</p>
+      
+      <img src="comp.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="450" height="350">
+    
+  	</div>
+  </div>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
+<div id="section1" class="container-fluid bg-2 text-center">
+  <h3 class="margin">ACADEMIC DETAILS</h3>
+  <!--Table introduction from here-->
+			<article class="index-table">
+				<div class="container">
+					<div class="table-responsive">
+						<table class="table table-bordered">
+							<tr>
+								<th class="text-center">Education</th>
+								<th class="text-center">Specialisation</th>
+								<th class="text-center">Institute</th>
+								<th class="text-center">Year</th>
+                <th class="text-center">CPI</th>
+							</tr>
+							
+							<tr>
+								<td>Post Graduate</td>
+								<td>Computer Aided Structural Engineering</td>
+								<td>IIIT Hyderabad (International Institute Of Information Technology)</td>
+								<td>2016-2018</td>
+                <td>8.0</td>
+							</tr>
+
+							<tr>
+								<td>UnderGraduate</td>
+								<td>Civil Engineering</td>
+								<td>IET DAVV, INDORE (Institute of Engineering and Technology Devi Ahilya Vishwavidyalaya)</td>
+								<td>2012-2016</td>
+                <td>74%</td>
+							</tr>
+						</table>
+					</div>	
+				</div> 
+			</article>
+			<!--Table ends here-->
+      <h3>FIELDS OF INTEREST</h3>
+      <p>Computer Programming, web development, Android Application Development, Geotechnical Earthquake Engineering, Machine Learning</p>
+      <h3>TECHNICAL SKILLS </h3>
+      <!--Table introduction from here-->
+      <article class="index-table">
+        <div class="container">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tr>
+                <th class="text-center">Languages : </th>
+                <td>C, C++, Java(geekforgeeks coding score-679, Problems solved-447)</td>
+              </tr>
+              <tr>
+                <th class="text-center">Web : </th>
+                <td>HTML, CSS ,Bootstrap, PHP, Google Maps Api(Web), Fpdf(pdf Creator)</td>
+              </tr>
+              <tr>
+                <th class="text-center">App development: </th>
+                <td>Android Studio, Google Maps Api(Android), Google Firestore </td>
+              </tr>
+              <tr>
+                <th class="text-center">Scripting : </th>
+                <td>Python (SciPy, Numpy, Sympy), MatLab Interface development: python Tkinter, Matlab GUI </td>
+              </tr>
+              <tr>
+                <th class="text-center">Databases : </th>
+                <td>Mysql(Basic), Sqlite 3 </td>
+              </tr>
+              <tr>
+                <th class="text-center">Tools : </th>
+                <td>SAP2000, Autocad, Qgis </td>
+              </tr>
+              <tr>
+                <th class="text-center">Simulation : </th>
+                <td>OPENSEES(open system for Earthquake Engineering Simulation)(TCL based)</td>
+              </tr>
+            </table>
+          </div>  
+        </div> 
+      </article>
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
+<div id="section2" class="container-fluid bg-3 text-center">    
+  <h3 class="margin">PROJECTS</h3><br>
   <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    <div class="col-sm-6">
+      <h4><b>Web application for EDRI (Earthquake Disaster Risk Index)</b> </h4>
+      <p>(Guide : Dr.Pradeep Kumar Ramancharla, Apr’18 – May’18) </p>
+      <p>Objective : Web application to fill form related to RCC(Reinforced Cement Concrete), BM_OR(Brick Masonry Other Roof), BM_CR(Brick Masonry Concrete Roof) buildings and visualisation of data in a tabular format using HTML, CSS,Bootstrap, PHP</p>
+      <p>Available at : <a href="http://eerc.iiit.ac.in/edri/">http://eerc.iiit.ac.in/edri</a> </p>
+      <hr>
     </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    <div class="col-sm-6">
+      <h4><b>Web application for RVS Screening Form(Rapid Visual Survey) </b> </h4>
+      <p>(Guide : Dr.Pradeep Kumar Ramancharla, Feb’18 – Apr’18) </p>
+      <p>Objective : Researching into possible structural parameters that are important to classify building as RED,YELLOW or GREEN and Development of Web Application using HTML, CSS, Bootstrap, PHP, Google Maps Api(Web), Fpdf(Report Generation)</p>
+      <p>Available at : <a href="http://eerc.iiit.ac.in/rvs/project1/">http://eerc.iiit.ac.in/rvs/project1</a></p>
+      <hr>
     </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    <div class="col-sm-6">
+      <h4><b>Android Application For Resource Allocation Based on GIS</b> </h4>
+      <p>(Guide : Dr.Sunitha Palissery, Mar’18 – Apr’18)</p>
+      <p> Objective : Using Cloud Firestore and Google Maps API Authority can do crowd messaging based on chosen radius in an area as well as assign Task to Resources.</p>
+      <hr>
+    </div>
+    <div class="col-sm-6">
+      <h4><b>Manipulation of Tekla Output according to different steel section</b> </h4>
+      <p> (Guide : Mr.Shailendra Singh Rathore (Structural Engineer at Nhance Hyderabad),Jan’18 – Feb’18) </p>
+      <p>Objective : VBA program has been written to generate report in excel automatically.</p>
+      <hr>
+    </div>
+    <div class="col-sm-6">
+      <h4><b> Upscaling ground leaf spectrum to canopy </b> </h4>
+      <p>(Guide : Dr.Ramachandra Prasad Pillutla, Aug’17 – Dec’17)</p>
+      <p> Objective : working on models for upscaling of field collected leaf spectrum to canopy level in python <b>Field visit:</b> used spectroradiometer and canopy analyser to collect canopy data from Araku Valley(A.P) </p>
+      <hr>
+    </div>
+    <div class="col-sm-6">
+      <h4><b>Android application for Navigation system for my campus</b> </h4>
+      <p> (Guide : Dr.Rajan oct’17 – nov’17) </p>
+      <p>Objective : An android application is made for navigation through IIIT-H campus.It shows the path between two points such that if there is a parking availablity then the path having parking is shown</p>
+      <hr>
+    </div>
+    <div class="col-sm-6">
+      <h4><b> Moment-curvature relationship</b> </h4>
+      <p>(Guide : Dr.Pradeep Kumar Ramancharla, Oct’17 – Nov’17)</p>
+      <p> Objective : A generalised Matlab code is written for plotting M-Phi relationship of beams </p>
+      <hr>
+    </div>
+    <div class="col-sm-6">
+      <h4><b> A tool for plant bio-chemical indices using hyperspectral imagery</b> </h4>
+      <p>(Guide : Dr.Ramachandra Prasad and NN salghuna jun’17 – jul’17)</p>
+      <p>Objective : a GUI in Matlab is made to access biochemical parameters Paper under review, Journal : Springer</p>
+      <hr>
+    </div>
+    <div class="col-sm-6">
+      <h4><b>3-D and 2-D Ground response analysis(Engineering Project)</b> </h4>
+      <p>(Guide : Dr.Supriya Mohanty , Jan’17 - Jul’17)</p>
+      <p> Objective : Interface is made using python tkinter and code written in TCl(Opensees) </p>
+      <hr>
+    </div>
+    <div class="col-sm-6">
+      <h4><b>GENERAL BEAM DESIGN(Engineering Project)</b> </h4>
+      <p>(Guide : Dr.Swajith Singh Goud)</p>
+      <p> Objective : generalised code for all type of beam design using MatLab </p>
+      <hr>
     </div>
   </div>
 </div>
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
-</footer>
+<!-- Fourth Container (Grid) -->
+<div id="section3" class="container-fluid bg-4 text-center">    
+  <h3 class="margin">ACCOMPLISHMENTS</h3>
+  <ul>
+    <li>Academic Award for highest SGPA in Spring 2017 semester</li>
+    <li>TA(Teaching Assistant) For Earthquake Engineering Course in Spring 2018 semester</li>
+    <li>Stood 2nd in Inter-House Basketball Competition held @IIITH</li>
+    <li>Runner up for Inter-Branch Basketball Competition held @IIITH</li>
+  </ul>
 
+  <br>
+  <br>
+
+  <h3 >HOBBIES</h3>
+  <p>Playing Basketball, Watching Basketball</p>
+
+  <br>
+  <br>
+
+  <h3>INSPIRATION</h3>
+  <p><b>(LeBron James)</b></p>
+  <p>In 2015, LeBron's clevland cavaliers lost finals to Steph Curry's golden state warriors. On the next day he was in the gym @6.00 AM in the morning working and perfecting his shots. In consecutive year LeBron defeated Steph Curry and became 2016 NBA Champion </p>
+</div>
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
 </body>
 </html>
 
