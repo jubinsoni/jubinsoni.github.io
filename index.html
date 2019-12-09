@@ -37,7 +37,7 @@
       height: 1080px;
   }
   .bg-3 { 
-      background-color: #1E88E5; /* Light Blue */
+      background-color: #C71585; /* Light Pink */
       color: #ffffff;
   }
   .bg-4 { 
@@ -78,8 +78,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#section1">ACADEMICS</a></li>
-        <li><a href="#section2">PROJECTS</a></li>
-        <li><a href="#section3">ACCOMPLISHMENTS</a></li>
+        <li><a href="#section2">WORK EXPERIENCE</a></li>
+        <li><a href="#section3">PROJECTS</a></li>
+        <li><a href="#section4">ACCOMPLISHMENTS</a></li>
       </ul>
     </div>
   </div>
@@ -177,77 +178,91 @@
       </article>
 </div>
 
+<!-- Third Container -->
+<div id="section2" class="container-fluid bg-4 text-center">
+  <h3 class="margin">WORK EXPERIENCE</h3>
+  <!--Table introduction from here-->
+  <p> Currenly I work as Data Scientist @ Cyient-Insights</p>
+  <br>
+  <br>
+  <ul style="text-align: left;">
+        <li>
+          <p>Elevator Company, Predictive Maintenance (Big Data Project) (08/2018) – (12/2019)</p>
+          <ul>
+            <li><p>• Work closely with Project Manager to develop work plan and keep the manager aware of any issues</p></li>
+            <li><p>• Implemented SQL ETL Process to Spark API</p></li>
+            <li><p>• Implemented Data Pipelines in Azure Data Factory</p></li>
+            <li><p>• Scheduling Models and Storing Prediction Results to Azure Datalake and SQL Database</p></li>
+            <li><p>• Converted Python Pandas code to PySpark</p></li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <p>Cyient Innovation Unit, Pupil Detection and Diameter Calculation (Image Processing) (02/2019) - (04/2019)</p>
+          <ul>
+            <li><p>• Wrote algorithm to detect and calculate pupil diameter in C++ and Python for an embedded device.</p></li>
+            <li><p>• Made a testing module to generate graphs and diameter per frame.</p></li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <p>EERC IIITH, TA (Teaching Assistant) for Earthquake Engineering Course (CES641) Spring 2018 semester (01/2018) - (06/2018)</p>
+          <ul>
+            <li><p>• Took lab classes for students to teach them programing in Matlab.</p></li>
+            <li><p>• Conducted Viva Exams, Project Review and evaluated Mid-Sem and End-Sem exams papers.</p></li>
+          </ul>
+        </li>
+        <br>
+  </ul>
+</div>
+
 <!-- Third Container (Grid) -->
-<div id="section2" class="container-fluid bg-3 text-center">    
-  <h3 class="margin">PROJECTS</h3><br>
-  <div class="row">
-    <div class="col-sm-6">
-      <h4><b>Web application for EDRI (Earthquake Disaster Risk Index)</b></h4>
-      <p>(Guide : Dr.Pradeep Kumar Ramancharla, Apr’18 – May’18)</p>
-      <p>Objective : Web application to fill form related to RCC(Reinforced Cement Concrete), BM_OR(Brick Masonry Other Roof), BM_CR(Brick Masonry Concrete Roof) buildings and visualisation of data in a tabular format using HTML, CSS,Bootstrap, PHP</p>
-      <p>Available at : <a href="http://eerc.iiit.ac.in/edri/">http://eerc.iiit.ac.in/edri</a> </p>
-      <hr>
-    </div>
-    <div class="col-sm-6">
-      <h4><b>Web application for RVS Screening Form(Rapid Visual Survey)</b></h4>
-      <p>(Guide : Dr.Pradeep Kumar Ramancharla, Feb’18 – Apr’18)</p>
-      <p>Objective : Researching into possible structural parameters that are important to classify building as RED,YELLOW or GREEN and Development of Web Application using HTML, CSS, Bootstrap, PHP, Google Maps Api(Web), Fpdf(Report Generation)</p>
-      <p>Available at : <a href="http://eerc.iiit.ac.in/rvs/project1/">http://eerc.iiit.ac.in/rvs/project1</a></p>
-      <hr>
-    </div>
-    <div class="col-sm-6">
-      <h4><b>Android Application For Resource Allocation Based on GIS</b></h4>
-      <p>(Guide : Dr.Sunitha Palissery, Mar’18 – Apr’18)</p>
-      <p>Objective : Using Cloud Firestore and Google Maps API Authority can do crowd messaging based on chosen radius in an area as well as assign Task to Resources.</p>
-      <hr>
-    </div>
-    <div class="col-sm-6">
-      <h4><b>Manipulation of Tekla Output according to different steel section</b></h4>
-      <p>(Guide : Mr.Shailendra Singh Rathore (Structural Engineer at Nhance Hyderabad),Jan’18 – Feb’18)</p>
-      <p>Objective : VBA program has been written to generate report in excel automatically.</p>
-      <hr>
-    </div>
-    <div class="col-sm-6">
-      <h4><b>Upscaling ground leaf spectrum to canopy</b></h4>
-      <p>(Guide : Dr.Ramachandra Prasad Pillutla, Aug’17 – Dec’17)</p>
-      <p>Objective : working on models for upscaling of field collected leaf spectrum to canopy level in python <b>Field visit:</b> used spectroradiometer and canopy analyser to collect canopy data from Araku Valley(A.P) </p>
-      <hr>
-    </div>
-    <div class="col-sm-6">
-      <h4><b>Android application for Navigation system for my campus</b></h4>
-      <p>(Guide : Dr.Rajan oct’17 – nov’17)</p>
-      <p>Objective : An android application is made for navigation through IIIT-H campus.It shows the path between two points such that if there is a parking availablity then the path having parking is shown</p>
-      <hr>
-    </div>
-    <div class="col-sm-6">
-      <h4><b>Moment-curvature relationship</b></h4>
-      <p>(Guide : Dr.Pradeep Kumar Ramancharla, Oct’17 – Nov’17)</p>
-      <p>Objective : A generalised Matlab code is written for plotting M-Phi relationship of beams </p>
-      <hr>
-    </div>
-    <div class="col-sm-6">
-      <h4><b>A tool for plant bio-chemical indices using hyperspectral imagery</b></h4>
-      <p>(Guide : Dr.Ramachandra Prasad and NN salghuna jun’17 – jul’17)</p>
-      <p>Objective : a GUI in Matlab is made to access biochemical parameters Paper under review, Journal : Springer</p>
-      <hr>
-    </div>
-    <div class="col-sm-6">
-      <h4><b>3-D and 2-D Ground response analysis(Engineering Project)</b></h4>
-      <p>(Guide : Dr.Supriya Mohanty , Jan’17 - Jul’17)</p>
-      <p>Objective : Interface is made using python tkinter and code written in TCl(Opensees) </p>
-      <hr>
-    </div>
-    <div class="col-sm-6">
-      <h4><b>GENERAL BEAM DESIGN(Engineering Project)</b></h4>
-      <p>(Guide : Dr.Swajith Singh Goud)</p>
-      <p>Objective : generalised code for all type of beam design using MatLab </p>
-      <hr>
-    </div>
-  </div>
+<div id="section3" class="container-fluid bg-3 text-center">    
+  <h3 class="margin">ACADEMIC PROJECTS</h3><br>
+  <ul style="text-align: left;">
+        <li>
+          <p>EERC IIITH, Web Application for EDRI (Earthquake Disaster Risk Index) & RVS (Rapid Visual Survey)  (02/2018) – (06/2018)<br>Guide : Dr.Pradeep Kumar Ramancharla</p>
+          <ul>
+            <li><p>• Web Application to fill form related to Rcc buildings and Tabular Visualization<br>Available at: <a href="http://eerc.iiit.ac.in/edri/" style="color: #0000ff">http://eerc.iiit.ac.in/edri/</a></p></li>
+            <li><p>• Researching possible structural parameter that can be used to classify building as Red, Yellow or green<br>Available at: <a href="http://eerc.iiit.ac.in/rvs/project1/" style="color: #0000ff">http://eerc.iiit.ac.in/rvs/project1/</a></p></li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <p>LSI IIITH, Upscaling Ground Leaf Spectrum to Canopy  (08/2017) – (12/2017)<br>Guide : Dr.Ramachandra Prasad Pillutla</p>
+          <ul>
+            <li><p>• Working on models for upscaling of field collected leaf spectrum to canopy level in python</p></li>
+            <li><p>• Built an Interface in tkinter so that spectrum can be visualized and can be parameters can be tweaked through interface </p></li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <p>LSI IIITH, Application for Navigation for MyCampus (10/2017) – (11/2017)<br>Guide : Dr.Rajan</p>
+          <ul>
+            <li><p>• Android Application is made for Navigation through IIITH campus.</p></li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <p>LSI IIITH, Development of Spectral Indices Tool for Detection of Rhizophora Apiculata (06/2017) – (07/2017)<br>Guide : Dr.Ramachandra Prasad and NN salghuna</p>
+          <ul>
+            <li><p>•Matlab GUI is made to access biochemical parameters</p></li>
+            <li><p>•Presented by NN Salghuna at YPRS(Young Professional Conference on Remote Sensing),Aachen,Germany </p></li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <p>EERC IIITH, Ground Response Analysis (01/2017) – (06/2017)<br>Guide : Dr.Supriya Mohanty</p>
+          <ul>
+            <li><p>• Interface is made using python Tkinter and analysis code written in TCL(OpenSees)</p></li>
+          </ul>
+        </li>
+        <br>
+  </ul>
 </div>
 
 <!-- Fourth Container (Grid) -->
-<div id="section3" class="container-fluid bg-4 text-center">    
+<div id="section4" class="container-fluid bg-2 text-center">    
   <h3 class="margin">ACCOMPLISHMENTS</h3>
   <ul>
     <li>Academic Award for highest SGPA in Spring 2017 semester</li>
